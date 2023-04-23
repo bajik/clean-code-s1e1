@@ -4,28 +4,46 @@
   color: #333;
   font-family: Lato, sans-serif;
 }
+
+/* Допустимо */
+li {
+  list-style:none;
+}
+
+/* Допустимо */
+input, button{
+  outline:none;
+}
+
 .header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
+@media (max-width:768px) {
+
+  .header {
+    text-align: center;
+  }
+
+}
+
 .header__img {
   width: 100%;
 }
+
 .header__link {
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
-.header { text-align: center;
-}
-}
 .todo {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .todo__task-input, .todo__task-title {
   width: 56%;
   display: inline-block;
@@ -40,14 +58,7 @@
   margin:0;
   padding: 0px;
 }
-/* Допустимо */
-li {
-  list-style:none;
-}
-/* Допустимо */
-input, button{
-  outline:none;
-}
+
 .todo__task-btn {
   background: none;
   border: 0px;
@@ -57,9 +68,11 @@ input, button{
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 .todo__task-btn:hover {
   color: #3a3a3a;
 }
+
 /* Heading */
 .todo__section-title,
 .todo__section-label {
@@ -71,6 +84,7 @@ input, button{
   margin: 0;
   text-transform: uppercase;
 }
+
 .todo__task-input {
   margin: 0;
   font-size: 18px;
@@ -83,6 +97,7 @@ input, button{
   font-family: Lato, sans-serif;
   color: #888;
 }
+
 .todo__task-input:focus {
   color: #333;
 }
@@ -92,6 +107,7 @@ input, button{
   display: block;
   margin: 0 0 20px;
 }
+
 .todo__task-input {
   width: 318px;
 }
@@ -101,11 +117,11 @@ input, button{
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .todo__task > * {
   vertical-align: middle;
 }
@@ -113,20 +129,24 @@ input, button{
 .todo__task-select {
   margin: 0 10px;
 }
+
 .todo__task-title {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
+
 .todo__task > .todo__task-input {
   width: 226px
 }
+
 .todo__button-image {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .todo__button-image:hover {
   transform: rotateZ(0);
 }
