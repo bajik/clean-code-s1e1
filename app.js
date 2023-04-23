@@ -9,7 +9,7 @@
 // Event handling, user interaction is what starts the code execution.
 
 var taskInput=document.getElementById("new-task");//Add a new task.
-var addButton=document.querySelector(".todo__task-button--add");//first button
+var addButton=document.querySelector(".todo__task-btn--add");//first button
 var incompleteTaskHolder=document.getElementById("tasks-incomplete");//ul of #tasks-incomplete
 var completedTasksHolder=document.getElementById("tasks-completed");//tasks-completed
 
@@ -43,10 +43,10 @@ var createNewTaskElement=function(taskString){
   editInput.classList.add("todo__task-input");
   editInput.type="text";
 
-  editButton.classList.add("todo__task-button", "todo__task-button--edit");
+  editButton.classList.add("todo__task-btn", "todo__task-btn--edit");
   editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
 
-  deleteButton.classList.add("todo__task-button", "todo__task-button--del");
+  deleteButton.classList.add("todo__task-btn", "todo__task-btn--del");
   deleteButtonImg.classList.add("todo__button-image");
   deleteButtonImg.src="./remove.svg";
   deleteButton.appendChild(deleteButtonImg);
@@ -88,7 +88,7 @@ var editTask=function(){
 
     var editInput=listItem.querySelector(".todo__task-input");
     var label=listItem.querySelector(".todo__task-title");
-    var editBtn=listItem.querySelector(".todo__task-button--edit");
+    var editBtn=listItem.querySelector(".todo__task-btn--edit");
     var containsClass=listItem.classList.contains("todo__task--edit");
     //If class of the parent is .todo__task--edit
     if(containsClass){
@@ -160,8 +160,8 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     console.log("bind list item events");
 //select ListItems children
     var checkBox=taskListItem.querySelector(".todo__task-select");
-    var editButton=taskListItem.querySelector(".todo__task-button--edit");
-    var deleteButton=taskListItem.querySelector(".todo__task-button--del");
+    var editButton=taskListItem.querySelector(".todo__task-btn--edit");
+    var deleteButton=taskListItem.querySelector(".todo__task-btn--del");
 
 
     //Bind editTask to edit button.

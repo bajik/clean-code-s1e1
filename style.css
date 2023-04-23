@@ -10,7 +10,7 @@ body {
   display: block;
   text-align: right;
 }
-.header__image {
+.header__img {
   width: 100%;
 }
 .header__link {
@@ -48,7 +48,7 @@ li {
 input, button{
   outline:none;
 }
-.todo__task-button {
+.todo__task-btn {
   background: none;
   border: 0px;
   color: #888;
@@ -57,7 +57,7 @@ input, button{
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-.todo__task-button:hover {
+.todo__task-btn:hover {
   color: #3a3a3a;
 }
 /* Heading */
