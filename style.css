@@ -7,12 +7,12 @@
 
 /* Допустимо */
 li {
-  list-style:none;
+  list-style: none;
 }
 
 /* Допустимо */
 input, button{
-  outline:none;
+  outline: none;
 }
 
 .header {
@@ -55,13 +55,13 @@ input, button{
 }
 
 .todo__tasks {
-  margin:0;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .todo__task-btn {
   background: none;
-  border: 0px;
+  border: 0;
   color: #888;
   font-size: 15px;
   width: 60px;
@@ -159,14 +159,14 @@ input, button{
 
 /* Edit Task */
 .todo__task .todo__task-input {
-  display:none
+  display: none
 }
 
 .todo__task--edit .todo__task-input {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .todo__task--edit .todo__task-title {
-  display:none;
+  display: none;
 }
