@@ -11,7 +11,8 @@ li {
 }
 
 /* Допустимо */
-input, button {
+input,
+button {
   outline: none;
 }
 
@@ -44,7 +45,8 @@ input, button {
   margin: 0 auto 0;
 }
 
-.todo__task-input, .todo__task-title {
+.todo__task-input,
+.todo__task-title {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
